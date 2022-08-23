@@ -15,7 +15,8 @@ const Footer = () => {
             <a href="/" className="footer__link">
               Home
             </a>
-            <span clspanssName="footer__link no-cursor">About</span>
+            <span className="footer__link no-cursor">
+              About</span>
             <a href="/books" className="footer__link">
               Books
             </a>
@@ -23,7 +24,9 @@ const Footer = () => {
               Cart
             </a>
           </div>
-          <div className="footer__copyright">Copyright &copy; 2022 Library</div>
+          <div className="footer__copyright">
+            Copyright &copy; 2022 Library
+          </div>
         </div>
       </div>
     </footer>
