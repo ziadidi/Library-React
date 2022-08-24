@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {useEffect, useState } from "react";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import { BrowserRouter as Router, Route } from "react-router-dom";
@@ -12,16 +12,11 @@ function App() {
   const [cart, setCart] = useState([]);
 
   function addToCart(book){
-    const dupeItem = cart.find(item => +item.id === +book.id)
-    if (dupeItem){
-      dupeItem.quantity += 1;
-    }
-    console.log(dupeItem)
-    setCart([...cart, {...book, quantity: 1}])
+    setCart([...cart, book])
   }
 
   useEffect(() => {
-    // console.log(cart)
+    console.log(cart)
   }, [cart])
 
   return (
